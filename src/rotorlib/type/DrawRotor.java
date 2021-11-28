@@ -31,7 +31,7 @@ public class DrawRotor {
 		float angleX = Angles.trnsx(unit.rotation + 90, x, y);
 		float angleY = Angles.trnsy(unit.rotation + 90, x, y);
 
-		if (unit.isDead()) {
+		if (unit.dead) {
 			speed = rotorSpeed * speedMultiplier/2;
 		}
 

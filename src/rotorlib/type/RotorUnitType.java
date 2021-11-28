@@ -20,7 +20,7 @@ public class RotorUnitType extends UnitType {
 	@Override
 	public void update(Unit unit) {
 		if (spinDeath) { 
-			if (unit.isDead() || unit.health <= 0f) {
+			if (unit.dead || unit.health <= 0f) {
 				unit.rotation += Time.delta * (fallSpeed * 1000);
 			}
 		}
