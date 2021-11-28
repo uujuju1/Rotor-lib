@@ -49,6 +49,7 @@ public class LibCopter implements ContentList {
 			rotors.add(
 				new DrawRotor(name + "-rotor") {{
 					x = y = 0f;
+					rotorSpeed = 15f;
 				}}
 			);
 		}};

@@ -1,5 +1,5 @@
 package rotorlib.type;
-
+ 
 import arc.graphics.g2d.Draw;
 import arc.struct.Seq;
 import arc.util.Time;
@@ -31,6 +31,7 @@ public class RotorUnitType extends UnitType {
 		super.draw(unit);
 		applyColor(unit);
 		rotors.each(DrawRotor -> DrawRotor.draw(unit));
+		Draw.reset();
 	}
 
 	@Override

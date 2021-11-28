@@ -8,7 +8,10 @@ import mindustry.gen.Unit;
 
 public class DrawRotor {
 	public final String name;
-	public float x = 0, y = 0, rotorSpeed = 15, speedMultiplier;
+	public float x = 0;
+	public float y = 0;
+	public float rotorSpeed = 15; 
+	float speedMultiplier;
 	public TextureRegion rotorRegion, jointRegion;
 
 	public DrawRotor(String name) {
