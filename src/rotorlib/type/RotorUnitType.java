@@ -35,7 +35,7 @@ public class RotorUnitType extends UnitType {
 
 	@Override
 	public void load() {
-		super.load(unit);
+		super.load();
 		rotors.each(DrawRotor::load);
 	}
 }
