@@ -1,5 +1,5 @@
-# Mindustry Java Mod Template
-A Java Mindustry mod template that works on Android and PC. The Kotlin version of this mod can be seen [here](https://github.com/Anuken/MindustryKotlinModTemplate).
+# Rotor lib
+A java Mindustry mod lib that makes the creation of copters, drones, etc, a little easier
 
 ## Building for Desktop Testing
 
