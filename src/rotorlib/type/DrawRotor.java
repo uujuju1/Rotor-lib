@@ -8,9 +8,7 @@ import mindustry.gen.Unit;
 
 public class DrawRotor {
 	public final String name;
-	public float x = 0;
-	public float y = 0;
-	public float rotorSpeed = 15; 
+	public float x = 0, y = 0, rotorSpeed = 15; 
 	float speedMultiplier;
 	public TextureRegion rotorRegion, jointRegion;
 
@@ -31,14 +29,14 @@ public class DrawRotor {
 		}
 
 		float speed = rotorSpeed * speedMultiplier;
-		float angleX = Angles.trnsx(unit.rotation + 90, x, y);
-		float angleY = Angles.trnsy(unit.rotation + 90, x, y);
+		float angleX = unit.x + Angles.trnsx(unit.rotation + 90, x, y);
+		float angleY = unit.y + Angles.trnsy(unit.rotation + 90, x, y);
 
 		if (unit.dead) {
 			speed = rotorSpeed * speedMultiplier/2;
 		}
 
-		Draw.rect(rotorRegion, angleX, angleY, Time.delta * speed + unit.rotation);
+		Draw.rect(rotorRegion, angleX, angleY, Time.time * speed + unit.rotation);
 		Draw.rect(jointRegion, angleX, angleY, unit.rotation + 90);
 	}
 }
