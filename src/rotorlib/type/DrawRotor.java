@@ -32,7 +32,7 @@ public class DrawRotor {
 		float angleY = Angles.trnsy(unit.rotation + 90, x, y);
 
 		if (unit.isDead()) {
-			speed = rotorSpeed * speedMultiplier /2
+			speed = rotorSpeed * speedMultiplier/2;
 		}
 
 		Draw.rect(rotorRegion, angleX, angleY, Time.delta * speed + unit.rotation);

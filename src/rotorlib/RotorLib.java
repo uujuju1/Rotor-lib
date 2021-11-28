@@ -15,7 +15,7 @@ import rotorlib.content.*;
 public class RotorLib extends Mod {
 
 	@Override
-	public loadContent() {
+	public void loadContent() {
 		new LibCopter().load();
 	}
 }
