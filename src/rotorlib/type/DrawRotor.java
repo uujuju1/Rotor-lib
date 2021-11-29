@@ -37,6 +37,6 @@ public class DrawRotor {
 		}
 
 		Draw.rect(rotorRegion, angleX, angleY, Time.time * speed + unit.rotation);
-		Draw.rect(jointRegion, angleX, angleY, unit.rotation + 90);
+		Draw.rect(jointRegion, angleX, angleY, unit.rotation - 90);
 	}
 }
